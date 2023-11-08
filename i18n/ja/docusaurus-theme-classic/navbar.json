@@ -1,0 +1,10 @@
+{
+  "title": {
+    "message": "ましゅまろPB説明書",
+    "description": "The title in the navbar"
+  },
+  "item.label.Booth": {
+    "message": "Booth",
+    "description": "Navbar item with label Booth"
+  }
+}

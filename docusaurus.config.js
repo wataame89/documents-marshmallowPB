@@ -1,11 +1,9 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import {themes as prismThemes} from 'prism-react-renderer';
 
-// With JSDoc @type annotations, IDEs can provide config autocompletion
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
+/** @type {import('@docusaurus/types').Config} */
 (module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: '綿飴屋',
+  tagline: 'Engineering Shader',
   url: 'https://wataame89.github.io',
   baseUrl: '/documents-marshmallowPB/',
   onBrokenLinks: 'throw',
@@ -15,22 +13,22 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   projectName: 'documents-marshmallowPB', // Usually your repo name.
 
   i18n: {
-    defaultLocale: "ja",
-    locales: ["ja", "en","ko","zh"],
-    localeConfigs: {
-      ja: {
-        label: '日本語',
-      },
-      en: {
-        label: 'English',
-      },
-      ko: {
-        label: '한국어',
-      },
-      zh: {
-        label: '中文',
-      },
-    },
+    defaultLocale: 'ja',
+    locales: ['ja','en','ko','zh'],
+    // localeConfigs: {
+    //   ja: {
+    //     label: '日本語',
+    //   },
+    //   en: {
+    //     label: 'English',
+    //   },
+    //   ko: {
+    //     label: '한국어',
+    //   },
+    //   zh: {
+    //     label: '中文',
+    //   },
+    // },
   },
 
   presets: [
@@ -61,18 +59,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: '綿飴屋さん',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
+        title: 'ましゅまろPB説明書',
+        // logo: {
+        //   alt: 'My Site Logo',
+        //   src: 'img/logo.svg',
+        // },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'ましゅまろPB',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'ましゅまろPB',
+          // },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -104,8 +102,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
 });

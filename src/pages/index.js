@@ -1,4 +1,15 @@
 import React from 'react';
+import { Redirect } from '@docusaurus/router';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+function Home() {
+  return <Redirect to={useBaseUrl('intro')} />;
+}
+
+export default Home;
+
+/*
+import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -38,3 +49,4 @@ export default function Home() {
     </Layout>
   );
 }
+*/
