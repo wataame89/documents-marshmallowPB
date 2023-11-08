@@ -41,9 +41,4 @@ sidebar_position: 2
 動作確認に専用のコンポーネント(Gesture Manager)を使用するため、VRChat Creator Companion(VCC)にのみ対応しています。  
 (非推奨ですが、動作確認をVRChatでするのであればVCCでなくても正常に動作します)
 
-旧方式の説明書はこちら(
-    [日本語](https://docs.google.com/document/d/1KHjt0BagTRlXFRFl8bq1eKNRhWiKgqepzLnoAWQfijc/edit?usp=sharing),
-    [English](https://docs.google.com/document/d/12CAuuS3SN1qaq0CEiuhqubb-cYlbu-30hCnEH5YxE6c/edit?usp=sharing),
-    [한국어](https://docs.google.com/document/d/13d1a1pTHBmXZDMULw4SaAkaCf8vMlmPxhdPn_bvBop8/edit?usp=sharing),
-    [中文](https://docs.google.com/document/d/16bqmgI4c1_MoycpeN0ZgXpPQ0tiEgX3HHjgqMalwbL8/edit?usp=sharing)
-    )
+旧方式の説明書は[こちら](https://docs.google.com/document/d/1dvbHSSSIGPoFFt5rA9RUba8309XX7bLs-4dKND2Bam0/edit?usp=sharing)
