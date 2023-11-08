@@ -3,40 +3,34 @@ sidebar_position: 4
 ---
 
 # 追加機能
-### 手動で導入したい場合(Prefabなど)
-ましゅまろPBをツールを用いずに手動で導入したい場合はこちらの動画を参照してください。
-ましゅまろPB導入方法(手動) / How to Setup Marshmallow PB(manual)
-(https://youtu.be/pKpk3hQhihc)
 
-動画ではツールで微調整用のプレハブを生成していますが、直接ましゅまろPBのプレハブ(marshmallow_PB/marshmallow_PB.prefab)をシーン上に置いたものでも問題ありません。微調整用のプレハブは設定アバターに対応した位置に調整されるため、対応アバターの場合はこちらをご利用ください。
-
-アバタープレハブに設定したい場合は、ましゅまろPBのプレハブを解凍してアバタープレハブに入れた後、プレハブのoverrideをして下さい。overrideでましゅまろPBがアバタープレハブ下に存在できるように設定したら、アバタープレハブを開いて手動設定を開始してください。この手法を用いるとプレハブアバターに一括でましゅまろPBが設定できます。設定を間違えると戻せなくなるので、設定前には必ずプレハブのバックアップを取ってください。
-
-更に、既存のボーン構造を維持したまま設定する方法もあります。既存の胸ボーンにconstraintを設定することで、ダミーボーンに追従させます。こちらの方法では既存のプレハブを破壊しないため、保守性は高いです。詳細は以下の動画を参照してください。
-ましゅまろPB導入方法(プレハブ) / How to Setup Marshmallow PB(Prefab)
-(https://youtu.be/F2O6JJYdG3A)
-
-つぶれアニメーションの調整方法
+### つぶれアニメーションの調整方法
 ましゅまろPBはつぶれる際に胸ボーンをアニメーションでスケール変更することでもっちりさせています。胸が大きい場合はデフォルトのアニメーションだと不自然になる場合があります。つぶれアニメーションを変更したい場合はMPB_L_ScaleとMPB_R_Scaleの2つのアニメーションのxとyのパラメータを変更してください。通常は1→1.3→1.35のように設定されています。この値を小さくするとつぶれ具合が緩やかになります。(例:1→1.2→1.25)
+<img
+  src={require('/img/tubure.png').default}
+  style={{ width: '800px' }}
+/>
 
-掴み機能をオフにしたい場合
+
+### 掴み機能をオフにしたい場合
 掴み機能をオフにしたい場合はGrabbing_LとGrabbing_RのAllow Grabbingの項目をFalseにして下さい。
 
-プリセット設定
+### アバタープリセットの追加
+<img
+  src={require('/img/preset.png').default}
+  style={{ width: '400px' }}
+/>
+アバターのプリセット設定はmarshmallow_PB/Setup/Presetフォルダに存在します。  
 
-marshmallow_PB/Setup/Presetフォルダに存在します。
-Pathは胸ボーンやコライダーのアバターからの相対パスです。
-_0、_100と付いているパラメータはそれぞれ対応する胸のblendshapeに応じた値を入れます。中間の値はこのパラメータから補完されます。
-各パラメータ名はセットアップツール上での設定項目に対応しています。
-セットアップツールに存在しないbreast_L_position、breast_L_scaleはそれぞれmarshmallow_PB_Lのローカル座標とスケールです。なお、marshmallow_PB_Rの座標はLの座標を反転して設定されます。
+設定項目  
+Path:胸ボーンやコライダーのアバターからの相対パスです。  
+breast_L_position、breast_L_scale:それぞれmarshmallow_PB_Lのローカル座標とスケールです。なお、marshmallow_PB_Rの座標はLの座標を反転して設定されます。  
+Parameter(_0、_100):対応する胸のblendshapeに応じた値を入れます。中間の値はこのパラメータから補完されます。各パラメータ名はセットアップツール上での設定項目に対応しています。  
 
-アバターのプリセットを作る場合は非対応アバターに入れたい場合と同様にアバターにmarshmallow_PBプレハブを合わせ、その時のmarshmallow_PB_Lのローカル座標、スケールを記録します。
-続いてPresetフォルダ内のプリセット0をコピーし、アバター名、Path、breast_L_position、breast_L_scaleをそれぞれ変更します。他のパラメータはお好みで設定して下さい。セットアップツールで確認してプリセットが追加されていれば完了です。
 
-注意
-・Quest版VRChatには対応していません。
-・PBの固定は出来ません。
-・商品の仕様上、服によっては貫通することがあります。
-・動かし方によってはブレが生じることがあります。
-・ギミックが複雑なためか、アップロードが失敗する場合があります。その場合はアップロードをやり直して下さい。
-・公序良俗を守ってお使いください。
+アバターのプリセットを作る場合は胸のblendshapeが0と100の2つのアバターに対して、非対応アバターと同様にしてmarshmallow_PB_Lを設定し、そのローカル座標、スケールを記録します。Presetフォルダ内のプリセット0をコピーし、アバター名、Path、breast_L_position、breast_L_scaleをそれぞれ変更します。他のパラメータはそのままでも基本的に問題ありません。セットアップツールで確認してプリセットが追加されていれば完了です。
+
+
+### 手動で導入したい場合(Prefabなど)
+ましゅまろPBをツールを用いずに手動で導入したい場合はこちらの動画を参照してください。
+<iframe width="280" height="158" src="https://www.youtube.com/embed/pKpk3hQhihc?si=trFn__bA0hqWF_76" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>

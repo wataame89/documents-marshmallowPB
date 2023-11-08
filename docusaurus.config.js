@@ -3,7 +3,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 (module.exports = {
   title: '綿飴屋',
-  tagline: 'Engineering Shader',
+  tagline: 'wataameya',
   url: 'https://wataame89.github.io',
   baseUrl: '/documents-marshmallowPB/',
   onBrokenLinks: 'throw',
@@ -30,7 +30,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
     //   },
     // },
   },
-
+    
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -39,14 +39,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
