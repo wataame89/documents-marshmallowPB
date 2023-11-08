@@ -2,34 +2,12 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# はじめに
+ましゅまろPBとは端的に言えばつぶれるPBです。ましゅまろPBは通常のPBとは異なり、角度以外に動径方向の自由度を持ちます。  
+設定する際にModular Avatarを用いてFXレイヤーを追加することで機能します。
 
-Let's discover **Docusaurus in less than 5 minutes**.
 
-## Getting Started
+### 対応アバター
+舞夜 Maya、桔梗 Kikyo、セレスティア Selestia、イナバ Inaba、イメリス Imeris、ここあ Kokoa、竜胆 Rindo、チューベローズ Tuberose、ルーシュカ Rushka、ユギ ミヨ Yugi Miyo、チセ Chise、くろなつ Kuronatu、萌 Moe、森羅 Shinra、卯月 Uzuki、ライム Lime、ヴェール Velle、マヌカ Manuka
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+・ルーシュカ Rushka、チセ Chise、森羅 ShinraはセットアップツールでWriteDefaultsをOFFにして設定してください。
