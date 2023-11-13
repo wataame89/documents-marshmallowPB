@@ -14,3 +14,11 @@ sidebar_position: 1
 ### 対応アバター
 舞夜 Maya、桔梗 Kikyo、セレスティア Selestia、イナバ Inaba、イメリス Imeris、ここあ Kokoa、竜胆 Rindo、チューベローズ Tuberose、ルーシュカ Rushka、ユギ ミヨ Yugi Miyo、チセ Chise、くろなつ Kuronatu、萌 Moe、森羅 Shinra、卯月 Uzuki、ライム Lime、ヴェール Velle、マヌカ Manuka
 
+### ベータ版使用者の方へ
+ベータ版にも関わらずお試し頂き、誠にありがとうございます。
+動かない場合や設定がよく分からない場合は[Twitter](https://twitter.com/wataameya_vr)にてお知らせください。
+
+ご意見・バグ報告などはこちらへ
+https://forms.gle/hNsmzWEtFp6dLnTD6
+
+(特に設定項目や機能への要望を頂けるとありがたいです)
