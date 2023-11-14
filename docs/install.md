@@ -10,9 +10,11 @@ sidebar_position: 2
 1.VRChat Creator Companion(VCC)を導入します。  
 2.[Modular Avatar](https://modular-avatar.nadena.dev/ja/)のパッケージをVCCに導入します。([パッケージのリンクはこちら](vcc://vpm/addRepo?url=https://vpm.nadena.dev/vpm.json))  
 3.VCC上でプロジェクトのManage Projectから"**Gesture Manager**","**Modular Avatar**","**Non-Destructive Modular Framework**" の3点を追加します。  
-4.プロジェクトを開き、ましゅまろPBをインポートします。   
-5.アバターを右クリックし、Modular Avatar→wataameya→MarshmallowPBをクリックします。(無い場合はアバターを選択した状態で画面上のGameobjectをクリックするとあるはずです)  
-6.生成されたmarshmallow_PB_Setupのプリセットを設定し、Gesture Manager上で正常に動いていれば設定完了です。  
+4.プロジェクトを開き、**ver1.7.0以前のましゅまろPBが入っている場合**はmarshmallow_PB/Setup/FX内の生成済みFXを移動し、marshmallow_PBフォルダを削除します。  
+5.最新版の[ましゅまろPB](https://wataame89.booth.pm/items/4511536)をインポートします。  
+6.アバターを右クリックし、メニューからwataameya→MarshmallowPBをクリックします。  
+(無い場合はアバターを選択した状態で画面上のGameobjectをクリックするとあるはずです)  
+7.生成されたmarshmallow_PB_Setupのプリセットを設定し、Gesture Manager上で正常に動いていれば設定完了です。  
 
 ### 非対応アバターに設定したい場合
 こちらの動画を参照してください。
@@ -20,6 +22,7 @@ sidebar_position: 2
 //工事中
 
 プリセット無しで胸ボーンを設定した後、marshmallow_PB_Setup以下の"For Unsupported Avatar/marshmallow_PB_L"をオンにしてアバターの胸部分に移動・スケール調整してください。目安としては、真横から見たときに胸のカーブ(赤線部分)にピボット部分(XYZ方向に動かす部分)の中心が位置するように設定してください。その後、緑色の部分が胸に収まるようにスケールを変更してください。
+
 <img
   src={require('/img/hitaioou.png').default}
   alt="hitaioou"
