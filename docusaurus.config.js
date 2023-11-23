@@ -71,6 +71,11 @@ import {themes as prismThemes} from 'prism-react-renderer';
             position: 'right',
           },
           {
+            href: 'https://twitter.com/wataameya_vr',
+            label: 'Twitter',
+            position: 'right',
+          },
+          {
             href: 'https://wataame89.booth.pm/',
             label: 'Booth',
             position: 'right',

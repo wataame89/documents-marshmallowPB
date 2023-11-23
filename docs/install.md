@@ -5,7 +5,7 @@ sidebar_position: 2
 # 導入方法
 こちらの動画を参照して下さい。
 
-//工事中
+<iframe width="560" height="315" src="https://www.youtube.com/embed/17p4SnL1kus?si=og9SA6Ef8Rwkg3_-" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 1.VRChat Creator Companion(VCC)を導入します。  
 2.[Modular Avatar](https://modular-avatar.nadena.dev/ja/)のパッケージをVCCに導入します。([パッケージのリンクはこちら](vcc://vpm/addRepo?url=https://vpm.nadena.dev/vpm.json))  
@@ -22,14 +22,14 @@ sidebar_position: 2
 ### 非対応アバターに設定したい場合
 こちらの動画を参照してください。
 
-//工事中
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BYJZBUt0f_w?si=W9nI2fAhSIp5ubg8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 プリセット無しで胸ボーンを設定した後、marshmallow_PB_Setup以下の"For Unsupported Avatar/marshmallow_PB_L"をオンにしてアバターの胸部分に移動・スケール調整してください。緑色の表示が見えない場合はScene上部のGizmosをクリックしてください。目安としては、真横から見たときに胸のカーブ(赤線部分)にピボット部分(XYZ方向に動かす部分)の中心が位置するように設定してください。その後、緑色の部分が胸に収まるようにスケールを変更してください。
 
 <img
-  src={require('/img/hitaioou.png').default}
+  src={require('/img/hitaioou2.png').default}
   alt="hitaioou"
-  style={{ width: '800px' }}
+  style={{ width: '450px' }}
 />
 
 
