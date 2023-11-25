@@ -2,8 +2,8 @@
 sidebar_position: 3
 ---
 
-# 調整方法
-### セットアップツールの設定項目
+# How to adjust
+### Setup tool settings
 
 <img
   src={require('/img/setup.png').default}
@@ -11,106 +11,106 @@ sidebar_position: 3
   style={{ width: '400px' }}
 />
 
----
-### 基本設定  
+--- ...
+### Basic Settings  
 
-プリセット  
-対応アバターを選択する場所です。
+Preset  
+This is where you select the corresponding avatar.
 
-胸ボーン  
-胸ボーンを選択する場所です。
+Chest Bone  
+This is where you select the breast bone.
 
-胸の大きさ(blendshape)  
-対応アバターの**胸を大きくするシェイプキーの値を入れてください。小さくするシェイプキーで設定したい場合は非対応アバターと同様に設定してください。
+Breast Size (blendshape)  
+Enter the value of the shape key that will increase the size of the **breasts** of supported avatars. If you want to set it with a smaller shape key, set it the same way as for non-supported avatars.
 
-胸ボーンのYスケール値(Transform)  
-胸ボーンのスケールを変えている場合はYスケール値を入れてください。XとZのスケール値は必要ありません。なお、胸ボーンのXYZのスケール値がそれぞれ異なっていても問題なく機能します。
+Y scale value of the breast bone (Transform)  
+If you are changing the scale of the breast bone, enter the Y scale value; the X and Z scale values are not necessary. The X and Z scale values are not necessary, but will work fine even if the XYZ scale values of the breastbone are different.
 
-PBプリセット  
-PBのプリセットを選択する場所です。「すごくやわらかめ、やわらかめ、ふつう、かため、すごくかため」の5種類が存在します。
+PB Preset  
+This is where you select the PB preset. There are 5 types: very soft, soft, normal, firm, and very firm.
 
----
+---PhysBone Preset
 
 ### PhysBone  
 
 Pull  
-PBの形状を戻す強さのパラメータです。
+This parameter is used to set the strength of PB to pull back the shape of PB.
 
 Momentum  
-PBのばねの強さのパラメータです。
+The parameter of spring strength of PB.
 
 Stiffness  
-PBの曲がりにくさ(ブレにくさ)のパラメータです。  
+Stiffness is a parameter of PB's stiffness.  
 
 Gravity  
-PBにかかる重力の強さのパラメータです。
+This is a parameter of the strength of gravity applied to the PB.
 
 GravityFalloff  
-PBの重力に対してどれだけ形状を保持するかのパラメータです。元の角度からずれると効果は小さくなり、重力の影響を受けるようになります。
+This is a parameter that determines how well the PB retains its shape under gravity. If the PB is shifted from its original angle, the effect becomes smaller and the PB is affected by gravity.
 
 Immobile  
-PBの動きにくさのパラメータです。この値はコライダーによる動作には影響しません。
+This is a parameter that determines how difficult it is for the PB to move. This value does not affect the movement by the collider.
 
 LImitAngle  
-PBの制限角度です。
+Limit angle of the PB.
 
 CollisionRadius  
-PBコライダーの大きさです。この値を大きくすると胸を触った時の判定が大きくなります。
+Size of the PB collider. The larger this value, the larger the judgment when the chest is touched.
 
 LimitColliderPosition  
-貫通防止用のPBを制限するコライダーの位置のパラメーターです。ver1.7.0からは仕様変更により機能していませんので、MaxSquishの項目で対応してください。
+This is a parameter for the position of the collider that limits the PB for preventing penetration, which has not been functioning since ver1.7.0 due to specification changes.
 
 StretchMotion  
-PBののつぶれやすさの慣性パラメータです。この値が大きい場合、アバターが前進した際に胸は慣性を強く受けてつぶれます。
+This is an inertia parameter that determines how easily the PB is squashed. If this value is large, the avatar's chest will be strongly inertialized and squashed when the avatar moves forward.
 
 MaxStretch  
-PBの伸びの最大値です。この値を大きくするとPBは長く伸びます。
+The maximum value of PB's stretch. The larger this value, the longer the PB will stretch.
 
 MaxSquish  
-PBのつぶれる最大値です。この値を大きくするとPBは深くつぶれます。小さくすると浅くつぶれるようになるので、貫通しにくくなります。
+This is the maximum value of squish of PB. If this value is increased, the PB will be squished deeper. If this value is decreased, the PB will be squished shallower, making it more difficult to penetrate.
 
 Collider  
-PBに干渉するコライダーです。5つまで設定できます。
+Collider that interferes with PB. 5 colliders can be set.
 
----
+---Up to 5 colliders can be set.
 
-### 詳細設定 
+### Advanced Settings 
 
-掴み機能  
-PBを掴めるかどうかを設定します。
+Grabbing Function  
+Set whether or not the PB can be grabbed.
 
-床コライダー  
-PBが床に干渉するかどうかを設定します。
+Floor collider  
+Sets whether the PB can interfere with the floor.
 
-他プレイヤーとの胸干渉  
-ましゅまろPBを入れた他プレイヤーと胸同士で干渉する機能を設定します。胸以外に頭のデフォルトコライダーとも干渉ができます。  
+Breast to Breast Interference with Other Players  
+Sets the ability to interfere chest to chest with other players with Masyumaro PBs. In addition to the chest, it can also interfere with the default collider on the head.  
 
-両胸同士の干渉  
-アバターの両胸同士で干渉するコライダーを設置するかどうかを設定します。
+Breast to Breast Interference  
+Sets whether or not to place colliders that interfere with both breasts of the avatar.
 
-干渉用コライダーの大きさ  
-胸同士で干渉するコライダーの大きさを設定します。
+Collider Size  
+Sets the size of the collider for interference between breasts.
 
-胸の回転の寄与度   
-ましゅまろPBの動作がどのくらい胸ボーンの回転に寄与するかを調整します。0にすると胸ボーンが平行に動きます。服にもよりますが、0に近づけるほど貫通しにくくなります。胸ボーンのRotation ConstraintのWeightに相当します。
+Contribution of chest rotation   
+Adjusts how much the movement of the Masyumaro PB contributes to the rotation of the breastbone; if set to 0, the breastbone will move in parallel. Depending on the clothing, the closer to 0, the less likely it is to penetrate. Equivalent to the Weight of the chest bone's Rotation Constraint.
 
-つぶれアニメーションの強さ  
-胸のつぶれアニメーションの強度を調整します。胸が大きい場合、横方向に潰れすぎてしまいますが、このパラメータを小さくすると自然になります。胸ボーンのScale ConstraintのWeightに相当します。
+Crush Animation Strength  
+Adjusts the strength of the breast crush animation. If the breasts are large, they will collapse too much in the horizontal direction, but a smaller value makes it more natural. Equivalent to Weight in the Scale Constraint of the breast bone.
 
-胸の垂れ下がりやすさ  
-屈んだ際の胸の垂れ下がりの最大値を設定します。0に設定するとほとんど垂れ下がらなくなります。
+Breast Drooping Likelihood  
+Sets the maximum amount of sagging of the chest when bending down; if set to 0, the chest will hardly sag at all.
 
----
+---If set to 0, little or no drooping will occur.
 
-### 高度な設定
-つぶれ機能のみ適用(元のPBを使用)  
-アバターの元のPBをそのままに、ましゅまろPBのつぶれる機能のみを適用します。具体的にはましゅまろPBの揺れ機能をオフにした状態で、元のPBを残しています。使用する場合、元のPBのAllow Grabbingはオフにすることを推奨します。
+### Advanced Settings
+Apply only the crush function (use original PB)  
+This option leaves the avatar's original PB as it is, and applies only the muscular PB's squash function. Specifically, the original PB is left in place with the Masyumaro PB's shaking function turned off. If used, it is recommended that Allow Grabbing of the original PB be turned off.
 
-つぶれ機能オフ(貫通対策)  
-ましゅまろPBがつぶれないようになり、揺れ機能のみ適用されます。どうしても貫通してしまう服の場合はオンにして下さい。
+Crushing function off (anti-penetration)  
+The Masyumaro PB will not be crushed and only the shaking function will be applied. Please turn it on for clothes that inevitably penetrate.
 
-重力機能オフ  
-ましゅまろPBが仰向けの場合につぶれなくなり、屈んだ場合に伸びなくなります。ましゅまろPBの重力再現の機構を無効化するため、PBのGravityパラメータは無効化されません。
+Gravity function off  
+Masyumaro PB will not be squashed when it is on its back, and will not be stretched when it is bent over. The Gravity parameter of Masyumaro PB is not disabled because the gravity reproduction mechanism of Masyumaro PB is disabled.
 
-配下のPBを全削除  
-設定した胸ボーンの配下に存在するPBを全削除します。通常は胸ボーンに設定されたPBのみ削除されます。アバターが複雑なPB構造を持つ場合はオンにして下さい。
+Delete all subordinate PBs  
+Deletes all PBs under the chest bone. Normally, only PBs set to the chest bone are deleted. Turn on if the avatar has a complex PB structure.

@@ -2,54 +2,54 @@
 sidebar_position: 5
 ---
 
-# 困ったときは
-### 貫通してしまう場合
-仕様上、服によってはどうしても貫通してしまいます。以下のような対策があります。
-- 胸の大きさのシェイプキーを服のシェイプキーに対してごく僅かに小さくする。(多くの場合はこれで対応できます)
-- 胸のつぶれ深さを「MaxSquish」で浅くする。
-- 「胸の回転の寄与度」を小さくして、胸が平行に動くようにする。
-- 「つぶれアニメーションの強さ」を小さくして、つぶれたときの変形を抑える。
-- どうしても貫通してしまう場合には、「**つぶれ機能オフ(貫通対策)**」をオンにして下さい。この方法はPBがつぶれなくなりますが、貫通しなくなります。
+# If you have a problem...
+### In case of penetration
+Due to the specifications, some clothes will inevitably penetrate. The following countermeasures are available.
+- Make the breast size shape key very slightly smaller than the clothing shape key. (In most cases, this will solve the problem.)
+- Make the breast squish depth shallower with "MaxSquish".
+- Reduce the "Breast Rotation Contribution" so that the breasts move parallel to each other.
+- Decrease the "Squash Animation Strength" to reduce the deformation when the chest is squashed.
+- If you cannot help but see penetration, turn on "**Crush function off (anti-penetration)**". This method will not crush the PB, but it will not allow it to penetrate.
 
-### セットアップしたアバターを元に戻したい場合(新方式)
-新方式は非破壊的導入であるため、アバター下のmarshmallow_PB_Setupを削除すれば導入前に戻ります。
+### If you want to restore the avatar to its original setup (new method)
+Since the new method is non-destructive, you can delete marshmallow_PB_Setup under the avatar to restore the avatar to its pre-installation state.
 
-### セットアップしたアバターを元に戻したい場合(旧方式)
-旧方式で設定したアバターの場合は複製されるものの、アバターとFXも元の状態に戻すには作業が必要です。ましゅまろPBは複製した同名のボーンに既存の胸ボーンを入れ子として入れています(例:Chest/breast_L/breast_L/…)。そのため、2つ並んだ同名の親子ボーンのうち、子ボーンを取り出し、親ボーンを削除すると元に戻ります。更に、他のmarshmallowと名のついたオブジェクトを消し、FXレイヤーを元のアバターのものに変更してください。最後にアバター末尾の「_MPB」を削除すれば完了です。(アバターやFXの名前の末尾が_MPBのままだとセットアップツールで弾かれます)  
-詳細は動画をご覧ください。
+### If you want to restore the avatar set up (old method)
+If you have set up avatars using the old method, they will be duplicated, but you will need to work on the avatar and FX to restore them to their original state. Masyumaro PB nests an existing chest bone into a duplicated bone of the same name (e.g. Chest/breast_L/breast_L/...). Therefore, of the two lined-up parent-child bones of the same name, the child bone is taken out and the parent bone is deleted to restore the original. Furthermore, delete the other object named marshmallow and change the FX layer to that of the original avatar. Finally, delete "_MPB" at the end of the avatar and you are done. (If the avatar or FX name ends with _MPB, it will be played by the setup tool.)  
+Please see the video for more details.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Nh1pLiSWz6I?si=6jGZxrHTBik8gz7L" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
-### ブレが大きい場合
-ましゅまろPBは押した際にブレが発生することがあります。基本的にブレはStiffness(変形しにくさ)を上げることで解消されます。
+### If the blurriness is too large
+Masyumaro PB can cause blurring when pressed. Basically, the shaking can be resolved by increasing the Stiffness (deformation resistance).
 
-### 勝手に胸がつぶれてしまう場合
-「他プレイヤーとの胸干渉」がオンになっている場合、この機能が何らかの不具合によって勝手に動作することで胸がつぶれてしまうことがあります。基本的には「他プレイヤーとの胸干渉」をオフにすることで解消されるはずです。不具合調査に協力して下さる方がいればご連絡ください。
+### In case the chest collapses on its own
+If "Breast Interference with Other Players" is turned on, the chest may be squashed when this function is activated by itself due to some glitch. Basically, turning off "Breast Interference with Other Players" should resolve the problem. If anyone is willing to help us investigate the glitch, please let us know.
 
-### ましゅまろPBの動きがおかしい場合
-PBを複数持つアバターの場合、通常の設定ではPBを削除しきれず、動きがおかしくなる場合があります(ヴェールなど)。この場合、「配下のPBを全削除」をオンにすると直ります。
+### If the movement of Masyumaro PB is not correct
+In the case of avatars with multiple PBs, the normal settings may not be able to delete all PBs, resulting in strange movements (e.g. Vale). In this case, turn on "Delete all PBs under the avatar" to fix the problem.
 
-### ましゅまろPBが適用されない場合
-Gesture Managerや再生モードに入ってもmarshmallow_PB_setupが残っている場合は何らかの理由でましゅまろPBが適用されていません。  
+### In case Masyumaro PB is not applied
+If marshmallow_PB_setup remains after entering Gesture Manager or playback mode, marshmallow_PB is not applied for some reason.  
 
-ウィンドウにメッセージが表示されている場合  
-再度導入方法を確認し、メッセージに従って修正してください。
+If a message is displayed in the window  
+Please check the installation method again and correct it according to the message.
 
-Consoleでエラーが発生している場合  
-何らかの不具合により処理が中断されているため、そのコードの詳細を[Booth](https://wataame89.booth.pm)か[Twitter](https://twitter.com/wataameya_vr)に送ってください。
+If an error occurs in the Console  
+Please send details of the code to [Booth](https://wataame89.booth.pm) or [Twitter](https://twitter.com/wataameya_vr).
 
-Consoleでエラーが発生していない場合  
-ウィンドウ上部のTools→NDM Framework→Apply on Playにチェックが入っているかを確認してください。入っていない場合はチェックを入れてください。チェックが入っているのに動かない場合はもう一度エラーを確認した後、ご相談ください。
+If the error is not occurring in the Console  
+Check if Tools→NDM Framework→Apply on Play is checked at the top of the window. If not, please check it. If it is checked but does not work, please contact us after checking the error again.
 
-### 注意
-・Quest版VRChatには対応していません。  
-・PBの固定は出来ません。  
-・商品の仕様上、服によっては貫通することがあります。  
-・動かし方によってはブレが生じることがあります。  
-・Modular Avatarを使用しない方法での導入はサポート対象外です。 
-・公序良俗を守ってお使いください。  
+### Attention
+VRChat for Quest is not supported.  
+PB cannot be fixed.  
+The product may penetrate through some clothes due to its specifications.  
+The product may be blurred depending on the way it is moved.  
+We do not support the installation without Modular Avatar. 
+Please use the product in a manner that respects public order and morals.  
 
-### 既知の不具合
+### Known Bugs
 
 
-### 不具合が起きた場合
-[Booth](https://wataame89.booth.pm)、[Twitter](https://twitter.com/wataameya_vr)にて作者までご連絡ください。
+### In case of any defects.
+Please contact the author at [Booth](https://wataame89.booth.pm) or [Twitter](https://twitter.com/wataameya_vr).

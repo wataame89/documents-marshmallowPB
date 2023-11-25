@@ -2,35 +2,35 @@
 sidebar_position: 2
 ---
 
-# 導入方法
-こちらの動画を参照して下さい。
+# How to install
+Please refer to this video.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/17p4SnL1kus?si=og9SA6Ef8Rwkg3_-" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
-1. VRChat Creator Companion(VCC)でプロジェクトを開きます。  
-2. [Modular Avatar](https://modular-avatar.nadena.dev/ja/)のパッケージをVCCに導入します。([パッケージのリンクはこちら](vcc://vpm/addRepo?url=https://vpm.nadena.dev/vpm.json))  
-3. VCC上でプロジェクトのManage Projectから"**Gesture Manager**","**Modular Avatar**","**Non-Destructive Modular Framework**" の3点を追加します。  
-4. 再度プロジェクトを開き、**ver1.7.0以前、またはbeta版のましゅまろPBが入っている場合**は「marshmallow_PB/Setup/FX」内の生成済みFXを移動し、marshmallow_PBフォルダを削除します。(削除しない場合、エラーが発生します)   
-5. [最新版のましゅまろPB](https://wataame89.booth.pm/items/4511536)をインポートします。  
-6. アバターを右クリックし、メニューからwataameya→MarshmallowPBをクリックします。  
-7. 生成されたmarshmallow_PB_Setupのプリセットを設定します。  
-8. 画面上部のメニューバーからTools→Gesture Manager Emulatorを押します。  
-9. Gesture Managerを起動し、正常に動いていれば設定完了です。  
+1. open your project in VRChat Creator Companion (VCC).  
+2. install the package [Modular Avatar](https://modular-avatar.nadena.dev/ja/) into VCC. ([Link to package here](vcc://vpm/addRepo?url=https://vpm.nadena.dev/vpm.json))  
+3. add "**Gesture Manager**", "**Modular Avatar**" and "**Non-Destructive Modular Framework**" from Manage Project in VCC.  
+4. reopen the project and move the generated FX in "marshmallow_PB/Setup/FX" and delete the marshmallow_PB folder if it contains **ver1.7.0 or earlier or beta version of Masyumaro PB**. (Failure to do so will result in an error.)   
+5. import the [latest version of Marshmallow PB](https://wataame89.booth.pm/items/4511536).  
+Right-click on the avatar and click wataameya→MarshmallowPB from the menu. 7.  
+7. set the generated marshmallow_PB_Setup preset. 8.  
+Press Tools→Gesture Manager Emulator from the menu bar at the top of the screen. 9.  
+9. start the Gesture Manager and if it is working properly, the setup is complete.  
 
-ましゅまろPBを設定済みのアバターを設定したい場合は[こちらを参考にましゅまろPBを外してから設定して下さい。](https://wataame89.github.io/documents-marshmallowPB/trouble)
+If you want to set up an avatar that has already been set up with Masyumaro PB, [please remove Masyumaro PB before setting it up by referring to this link]. (https://wataame89.github.io/documents-marshmallowPB/trouble)
 
-### 非対応アバターに設定したい場合
-こちらの動画を参照してください。
+### If you want to set an avatar that does not support Masyumaro PB
+Please refer to this video.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BYJZBUt0f_w?si=W9nI2fAhSIp5ubg8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
-1. アバターを右クリックし、メニューからwataameya→MarshmallowPBをクリックします。  
-2. 生成されたmarshmallow_PB_Setupをプリセット無しのまま、胸ボーンを設定します。動画ではオンのままですが、胸のPBはオフにすることが推奨されます。  
-3. marshmallow_PB_Setup以下の"For Unsupported Avatar/marshmallow_PB_L"をオンにします。
-4. 緑色のカプセルコライダーの位置を確認します。見えない場合はScene上部のGizmosをクリックしてください。
-5. カプセルコライダーをアバターの左胸部分に移動・スケール調整します。目安としては、真横から見たときに胸のカーブ(赤線部分)にピボット部分(XYZ方向に動かす部分)の中心が位置するように設定してください。  
-6. カプセルコライダーの部分が胸に収まるようにスケールを変更します。
-7. Gesture Managerを起動し、正常に動いていれば設定完了です。
+1. right-click on the avatar and click on wataameya→MarshmallowPB from the menu  
+2. leave the generated marshmallow_PB_Setup with no preset and set the breast bone. It is recommended that the chest PB be turned off, although it is left on in the video. 3.  
+Turn on "For Unsupported Avatar/marshmallow_PB_L" under marshmallow_PB_Setup. 4.
+Check the position of the green capsule collider. If you do not see it, click on Gizmos at the top of the Scene. 5.
+Move and scale the capsule collider to the left chest area of the avatar. As a rough guide, set the center of the pivot part (the part to be moved in the XYZ direction) to be located on the curve of the chest (red line) when viewed from the right side. 6.  
+Change the scale so that the capsule collider fits into the chest. 7.
+7. launch the Gesture Manager, and if it is working properly, the setting is complete.
 
 <img
   src={require('/img/hitaioou2.png').default}
@@ -39,18 +39,18 @@ sidebar_position: 2
 />
 
 
-### Modular Avatarを使用しない方法(旧方式)
+### How not to use Modular Avatar (old method)
 :::caution
-アバターとFXレイヤーを複製して設定しているため、現在は非推奨です。  
-特別な理由が無い場合は新方式を使用してください。
-:::
+This method is now deprecated because it duplicates and sets up avatars and FX layers.  
+Use the new method unless there is a special reason.
+:::::caution
 
-こちらの動画を参照して下さい。
+Please refer to this video.
 
 <iframe width="280" height="158" src="https://www.youtube.com/embed/739tyxA7PKo?si=FkVczSvkKsqLBcV9" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 
-動作確認に専用のコンポーネント(Gesture Manager)を使用するため、VRChat Creator Companion(VCC)にのみ対応しています。  
-(非推奨ですが、動作確認をVRChatでするのであればVCCでなくても正常に動作します)
+Only compatible with VRChat Creator Companion (VCC) as it uses a dedicated component (Gesture Manager) to check its operation.  
+(It is deprecated, but if you are using VRChat to check the operation, it will work fine even without VCC.)
 
-[旧方式の説明書はこちら](https://docs.google.com/document/d/1dvbHSSSIGPoFFt5rA9RUba8309XX7bLs-4dKND2Bam0/edit?usp=sharing)
+[For instructions for the old method, click here](https://docs.google.com/document/d/1dvbHSSSIGPoFFt5rA9RUba8309XX7bLs-4dKND2Bam0/edit?usp=sharing)
