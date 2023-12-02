@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
   baseUrl: '/documents-marshmallowPB/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/wataameya.png',
   organizationName: 'wataame89', // Usually your GitHub org/user name.
   projectName: 'documents-marshmallowPB', // Usually your repo name.
 
@@ -57,7 +57,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
         title: 'ましゅまろPB説明書',
         // logo: {
         //   alt: 'My Site Logo',
-        //   src: 'img/logo.svg',
+        //   src: 'img/wataameya.png',
         // },
         items: [
           // {
