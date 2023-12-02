@@ -6,8 +6,7 @@ sidebar_position: 5
 ### 貫通してしまう場合
 仕様上、服によってはどうしても貫通してしまいます。以下のような対策があります。
 - 胸の大きさのシェイプキーを服のシェイプキーに対してごく僅かに小さくする。(多くの場合はこれで対応できます)
-- 胸のつぶれ深さを「MaxSquish」で浅くする。
-- 「胸の回転の寄与度」を小さくして、胸が平行に動くようにする。
+- 胸のつぶれ深さをPhysBone設定の「LimitColliderPosition」の数値をを大きくする、もしくは「MaxSquish」の数値を小さくすることで浅くする。
 - 「つぶれアニメーションの強さ」を小さくして、つぶれたときの変形を抑える。
 - どうしても貫通してしまう場合には、「**つぶれ機能オフ(貫通対策)**」をオンにして下さい。この方法はPBがつぶれなくなりますが、貫通しなくなります。
 
@@ -18,6 +17,9 @@ sidebar_position: 5
 旧方式で設定したアバターの場合は複製されるものの、アバターとFXも元の状態に戻すには作業が必要です。ましゅまろPBは複製した同名のボーンに既存の胸ボーンを入れ子として入れています(例:Chest/breast_L/breast_L/…)。そのため、2つ並んだ同名の親子ボーンのうち、子ボーンを取り出し、親ボーンを削除すると元に戻ります。更に、他のmarshmallowと名のついたオブジェクトを消し、FXレイヤーを元のアバターのものに変更してください。最後にアバター末尾の「_MPB」を削除すれば完了です。(アバターやFXの名前の末尾が_MPBのままだとセットアップツールで弾かれます)  
 詳細は動画をご覧ください。
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Nh1pLiSWz6I?si=6jGZxrHTBik8gz7L" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
+### エラーウィンドウが出た場合
+大抵の場合、セットアップの設定が間違っているので導入方法の動画を参考に設定し直してください。
 
 ### ブレが大きい場合
 ましゅまろPBは押した際にブレが発生することがあります。基本的にブレはStiffness(変形しにくさ)を上げることで解消されます。
@@ -31,25 +33,21 @@ PBを複数持つアバターの場合、通常の設定ではPBを削除しき�
 ### ましゅまろPBが適用されない場合
 Gesture Managerや再生モードに入ってもmarshmallow_PB_setupが残っている場合は何らかの理由でましゅまろPBが適用されていません。  
 
-ウィンドウにメッセージが表示されている場合  
+**ウィンドウにメッセージが表示されている場合**  
 再度導入方法を確認し、メッセージに従って修正してください。
 
-Consoleでエラーが発生している場合  
-何らかの不具合により処理が中断されているため、そのコードの詳細を[Booth](https://wataame89.booth.pm)か[Twitter](https://twitter.com/wataameya_vr)に送ってください。
+**Consoleでエラーが発生している場合**  
+何らかの不具合により処理が中断されているため、そのコードの詳細を[Booth](https://wataame89.booth.pm)か[Twitter](https://twitter.com/wataameya_vr)に送ってください。  
+ただし、**再生モードを解除した際に発生するエラーはましゅまろPBのエラーとは関係がない**ので、再生モードに入ったときに発生するエラーを送ってください。
 
-Consoleでエラーが発生していない場合  
+**Consoleでエラーが発生していない場合**  
 ウィンドウ上部のTools→NDM Framework→Apply on Playにチェックが入っているかを確認してください。入っていない場合はチェックを入れてください。チェックが入っているのに動かない場合はもう一度エラーを確認した後、ご相談ください。
 
-### 注意
-・Quest版VRChatには対応していません。  
-・PBの固定は出来ません。  
-・商品の仕様上、服によっては貫通することがあります。  
-・動かし方によってはブレが生じることがあります。  
-・Modular Avatarを使用しない方法での導入はサポート対象外です。 
-・公序良俗を守ってお使いください。  
 
 ### 既知の不具合
-
+- ましゅまろPBを掴んだ際にコライダーの判定が消えない不具合。引っ張るなどして、コライダーから離れると正常に判定が消えます。
+恐らくVRChat側の仕様変更による不具合だと思われます。
 
 ### 不具合が起きた場合
-[Booth](https://wataame89.booth.pm)、[Twitter](https://twitter.com/wataameya_vr)にて作者までご連絡ください。
+[Booth](https://wataame89.booth.pm)、[Twitter](https://twitter.com/wataameya_vr)にて作者までご連絡ください。  
+軽微なバグ・不具合を見つけた場合は[こちらのGoogleformまで](https://forms.gle/DHajiroywcGEGHb98)お願いします。
