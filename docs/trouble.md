@@ -6,9 +6,12 @@ sidebar_position: 5
 ### 貫通してしまう場合
 仕様上、服によってはどうしても貫通してしまいます。以下のような対策があります。
 - 胸の大きさのシェイプキーを服のシェイプキーに対してごく僅かに小さくする。(多くの場合はこれで対応できます)
-- 胸のつぶれ深さをPhysBone設定の「LimitColliderPosition」の数値をを大きくする、もしくは「MaxSquish」の数値を小さくすることで浅くする。
-- 「つぶれアニメーションの強さ」を小さくして、つぶれたときの変形を抑える。
-- どうしても貫通してしまう場合には、「**つぶれ機能オフ(貫通対策)**」をオンにして下さい。この方法はPBがつぶれなくなりますが、貫通しなくなります。
+- **胸のつぶれ深さを浅くする。**
+    - PhysBone設定の「[LimitColliderPosition](https://wataame89.github.io/documents-marshmallowPB/setup#limitcolliderposition)」の数値をを大きくする、もしくは「[MaxSquish](https://wataame89.github.io/documents-marshmallowPB/setup#maxsquish)」の数値を小さくすることで設定できます。
+- **つぶれたときの変形を抑える。**
+    - 「[つぶれアニメーションの強さ](https://wataame89.github.io/documents-marshmallowPB/setup#%E3%81%A4%E3%81%B6%E3%82%8C%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E5%BC%B7%E3%81%95)」を小さくすることで設定できます。
+- どうしても貫通してしまう場合には、**つぶれ機能をオフ**にして下さい。この方法はPBがつぶれなくなりますが、貫通しなくなります。
+    - 「[つぶれ機能オフ(貫通対策)](https://wataame89.github.io/documents-marshmallowPB/setup#%E3%81%A4%E3%81%B6%E3%82%8C%E6%A9%9F%E8%83%BD%E3%82%AA%E3%83%95%E8%B2%AB%E9%80%9A%E5%AF%BE%E7%AD%96)」をオンにすることで設定できます。
 
 ### セットアップしたアバターを元に戻したい場合(新方式)
 新方式は非破壊的導入であるため、アバター下のmarshmallow_PB_Setupを削除すれば導入前に戻ります。
