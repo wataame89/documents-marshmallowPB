@@ -8,6 +8,7 @@ sidebar_position: 5
 - 胸の大きさのシェイプキーを服のシェイプキーに対してごく僅かに小さくする。(多くの場合はこれで対応できます)
 - **胸のつぶれ深さを浅くする。**
     - PhysBone設定の「[LimitColliderPosition](https://wataame89.github.io/documents-marshmallowPB/setup#limitcolliderposition)」の数値をを大きくする、もしくは「[MaxSquish](https://wataame89.github.io/documents-marshmallowPB/setup#maxsquish)」の数値を小さくすることで設定できます。
+    - 仰向けになったときのつぶれ具合は「[胸のつぶれやすさ(仰向け)](https://wataame89.github.io/documents-marshmallowPB/setup#%E8%83%B8%E3%81%AE%E3%81%A4%E3%81%B6%E3%82%8C%E3%82%84%E3%81%99%E3%81%95%E4%BB%B0%E5%90%91%E3%81%91)」の数値を小さくすることで設定できます。
 - **つぶれたときの変形を抑える。**
     - 「[つぶれアニメーションの強さ](https://wataame89.github.io/documents-marshmallowPB/setup#%E3%81%A4%E3%81%B6%E3%82%8C%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E5%BC%B7%E3%81%95)」を小さくすることで設定できます。
 - どうしても貫通してしまう場合には、**つぶれ機能をオフ**にして下さい。この方法はPBがつぶれなくなりますが、貫通しなくなります。
@@ -21,17 +22,21 @@ sidebar_position: 5
 詳細は動画をご覧ください。
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Nh1pLiSWz6I?si=6jGZxrHTBik8gz7L" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
-### エラーウィンドウが出た場合
-大抵の場合、セットアップの設定が間違っているので導入方法の動画を参考に設定し直してください。
-
 ### ブレが大きい場合
 ましゅまろPBは押した際にブレが発生することがあります。基本的にブレはStiffness(変形しにくさ)を上げることで解消されます。
+
+### エラーウィンドウが出た場合
+大抵の場合、セットアップの設定が間違っているので導入方法の動画を参考に設定し直してください。
 
 ### 勝手に胸がつぶれてしまう場合
 「他プレイヤーとの胸干渉」がオンになっている場合、この機能が何らかの不具合によって勝手に動作することで胸がつぶれてしまうことがあります。基本的には「他プレイヤーとの胸干渉」をオフにすることで解消されるはずです。不具合調査に協力して下さる方がいればご連絡ください。
 
 ### ましゅまろPBの動きがおかしい場合
 PBを複数持つアバターの場合、通常の設定ではPBを削除しきれず、動きがおかしくなる場合があります(ヴェールなど)。この場合、「配下のPBを全削除」をオンにすると直ります。
+
+### ましゅまろPBの動きでメッシュが激しく破綻する場合
+ましゅまろPBの位置がズレている可能性が考えられます。非対応アバターと同様に設定するか、「[オフセットとしてこのオブジェクトのTransformを使用](https://wataame89.github.io/documents-marshmallowPB/setup#%E3%82%AA%E3%83%95%E3%82%BB%E3%83%83%E3%83%88%E3%81%A8%E3%81%97%E3%81%A6%E3%81%93%E3%81%AE%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AEtransform%E3%82%92%E4%BD%BF%E7%94%A8)」
+をオンにしてオフセットを設定して下さい。
 
 ### ましゅまろPBが適用されない場合
 Gesture Managerや再生モードに入ってもmarshmallow_PB_setupが残っている場合は何らかの理由でましゅまろPBが適用されていません。  
