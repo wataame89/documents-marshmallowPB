@@ -7,7 +7,7 @@ sidebar_position: 2
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/17p4SnL1kus?si=og9SA6Ef8Rwkg3_-" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
-1. VRChat Creator Companion(VCC)でプロジェクトを開きます。  
+1. VRChat Creator Companion(VCC)でプロジェクトを開きます。(**VCCは最新版を使用してください**)  
 2. [Modular Avatar](https://modular-avatar.nadena.dev/ja/)のパッケージをVCCに導入します。([パッケージのリンクはこちら](vcc://vpm/addRepo?url=https://vpm.nadena.dev/vpm.json))  
 3. VCC上でプロジェクトのManage Projectから"**Gesture Manager**","**Modular Avatar**","**Non-Destructive Modular Framework**" の3点を追加します。  
 4. 再度プロジェクトを開き、インポートされていることを確認します。
