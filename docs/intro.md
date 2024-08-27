@@ -31,7 +31,7 @@ ver1.7.0以降ではModular Avatarの[Non-Destructive Modular Framework(NDMF)](h
 - その他、細かい様々な調整(ブレにくいコライダー、掴んだ際のコライダーオフ機能、床コライダー設定、etc.)  
 
 ### 対応アバター
-舞夜 Maya、桔梗 Kikyo、セレスティア Selestia、イナバ Inaba、イメリス Imeris、ここあ Kokoa、竜胆 Rindo、チューベローズ Tuberose、ルーシュカ Rushka、ユギ ミヨ Yugi Miyo、チセ Chise、くろなつ Kuronatu、 萌 Moe、森羅 Shinra、卯月 Uzuki、ライム Lime、ヴェール Velle、マヌカ Manuka、あのん Anon、リーファ Leefa、サタリナ族のメイドさん Satarina、珀杏 Hakua、瑞希 Mizuki、狐雪 Koyuki、ソフィナ Sophina、龍のヨルちゃん Yoru、ラシューシャ Lasyusha、シャオファ Xiaohua、凪 Nagi、シフォン Chiffon、リルモワ Liloumois、ルゼブル Lzebul、サリア Saria、伊奈波かや InabaKaya、モルフォ Morpho、しお Sio、きゃろん Kyalong、キスマ UltimateKissMa
+舞夜 Maya、桔梗 Kikyo、セレスティア Selestia、イナバ Inaba、イメリス Imeris、ここあ Kokoa、竜胆 Rindo、チューベローズ Tuberose、ルーシュカ Rushka、ユギ ミヨ Yugi Miyo、チセ Chise、くろなつ Kuronatu、 萌 Moe、森羅 Shinra、卯月 Uzuki、ライム Lime、ヴェール Velle、マヌカ Manuka、あのん Anon、リーファ Leefa、サタリナ族のメイドさん Satarina、珀杏 Hakua、瑞希 Mizuki、狐雪 Koyuki、ソフィナ Sophina、龍のヨルちゃん Yoru、ラシューシャ Lasyusha、シャオファ Xiaohua、凪 Nagi、シフォン Chiffon、リルモワ Liloumois、ルゼブル Lzebul、サリア Saria、伊奈波かや InabaKaya、モルフォ Morpho、しお Sio、きゃろん Kyalong、キスマ UltimateKissMa、ナナセ・ノワール Nanase Noir、真冬 Mafuyu、ルルネ Rurune
 
 ### 注意
 - Quest版VRChatには対応していません。  
