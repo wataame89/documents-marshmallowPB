@@ -11,7 +11,7 @@ sidebar_position: 1
 /> -->
 
 [ましゅまろPB](https://wataame89.booth.pm/items/4511536)とはリッチな物理表現を可能としたつぶれるPhysBoneです。  
-通常のPhysBoneに加え、アニメーションやコンポーネントを組み合わせて形成されており、設定する際はオブジェクトに加え、FXレイヤーを追加することで機能します。
+通常のPhysBoneに加え、アニメーションやコンポーネントを組み合わせて形成されており、設定する際はオブジェクトに加え、FXレイヤーを追加することで機能します。  
 ver1.7.0以降ではModular Avatarの[Non-Destructive Modular Framework(NDMF)](https://github.com/bdunderscore/ndmf)対応により、非破壊的に導入が可能となりました。  
 
 ### ましゅまろPB紹介動画

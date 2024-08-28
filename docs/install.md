@@ -36,7 +36,6 @@ sidebar_position: 2
 
 <img
   src={require('/img/hitaioou2.png').default}
-  alt="hitaioou"
   style={{ width: '450px' }}
 />
 
