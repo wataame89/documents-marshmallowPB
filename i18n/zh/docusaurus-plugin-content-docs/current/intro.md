@@ -5,7 +5,7 @@ sidebar_position: 1
 # 简介。
 
 <br/>
-### [New Document Site](https://wataame89.github.io/documents-wataameya/marshmallowPB/intro/)
+### [Here is the new documentation site](https://wataame89.github.io/documents-wataameya/marshmallowPB/intro)
 <br/>
 
 [Masyumaro PB](https://wataame89.booth.pm/items/4511536)是一款具有丰富物理表现力的可碾压物理骨。

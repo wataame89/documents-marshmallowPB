@@ -5,7 +5,7 @@ sidebar_position: 1
 # 소개
 
 <br/>
-### [New Document Site](https://wataame89.github.io/documents-wataameya/marshmallowPB/intro/)
+### [Here is the new documentation site](https://wataame89.github.io/documents-wataameya/marshmallowPB/intro)
 <br/>
 
 [마시멜로 PB](https://wataame89.booth.pm/items/4511536)는 풍부한 물리 표현이 가능한 으깨어지는 PhysBone입니다.  

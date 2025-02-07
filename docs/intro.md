@@ -5,7 +5,7 @@ sidebar_position: 1
 # はじめに
 
 <br/>
-### [ドキュメントサイトをリニューアルしました。こちらをご参照ください！](https://wataame89.github.io/documents-wataameya/marshmallowPB/intro/)
+### [ドキュメントサイトをリニューアルしました。こちらをご参照ください！](https://wataame89.github.io/documents-wataameya/marshmallowPB/intro)
 <br/>
 
 <!-- <img

@@ -5,7 +5,7 @@ sidebar_position: 1
 # Introduction
 
 <br/>
-### [New Document Site](https://wataame89.github.io/documents-wataameya/marshmallowPB/intro/)
+### [Here is the new documentation site](https://wataame89.github.io/documents-wataameya/marshmallowPB/intro)
 <br/>
 
 [MARSHMALLOW_PB](https://wataame89.booth.pm/items/4511536) is a crushable PhysBone with rich physics.  
